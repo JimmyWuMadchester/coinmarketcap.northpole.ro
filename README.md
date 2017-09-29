@@ -7,8 +7,6 @@ Due to high server load, crawling has temporarily changed to every 10 minutes un
 
 A straightforward JSON API for all the currencies and assets found on [coinmarketcap.com](http://coinmarketcap.com/ "coinmarketcap.com") crawled every 5 minutes
 
-<br />
-
 version 8
 ---------
 
@@ -18,9 +16,6 @@ version 8
 
 [historical data bitcoin 2016](//coinmarketcap.northpole.ro/history.json?coin=bitcoin&period=2016)
 
-<br />
-
-<br />
 
 community projects
 ------------------
