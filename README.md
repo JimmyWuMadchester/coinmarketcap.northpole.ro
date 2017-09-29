@@ -2,7 +2,7 @@
 
 A web crawler to download all the currencies and assets found on [coinmarketcap.com](http://coinmarketcap.com/ "coinmarketcap.com") and save the results into a collection of JSON objects in a folder.
 
-This projoect is forked from [mess110/coinmarketcap.northpole.ro](https://github.com/mess110/coinmarketcap.northpole.ro). All down crawled data is accessible on (coinmarketcap.northpole.ro)[http://coinmarketcap.northpole.ro].
+This projoect is forked from [mess110/coinmarketcap.northpole.ro](https://github.com/mess110/coinmarketcap.northpole.ro). All down crawled data is accessible on [coinmarketcap.northpole.ro](http://coinmarketcap.northpole.ro).
 
 I'm adding my own comments and modifications to the project which will suits my need. 
 
@@ -32,7 +32,8 @@ Freshly from the new VM, there are a few more steps needed rather suggested by @
 
 ```ruby script.rb```
 
-You can check the log file under ```./logs/script.log```
+You can check the log file under ```./logs/script.log```.
+
 You can also find all the downloaded JSON objects under ```./public/api/```
 
 ### Deploy with capistrano
