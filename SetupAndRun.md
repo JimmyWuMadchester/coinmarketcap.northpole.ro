@@ -16,7 +16,7 @@ I've used Azure to get a vitual machine running for this project. You should be 
 
 Freshly from the new VM, there are a few more steps needed rather suggested by @Mess110.
 
-1. (Install RVM)[https://github.com/rvm/ubuntu_rvm]
+1. [Install RVM](https://github.com/rvm/ubuntu_rvm)
 2. ```rvm install 2.1.0``` (Using RVM to install ruby 2.1.0)
 3. ```gem install bundler``` (Install Bundler)
 4. ```git clone https://github.com/JimmyWuMadchester/coinmarketcap.northpole.ro.git``` (Git clone this repo)
