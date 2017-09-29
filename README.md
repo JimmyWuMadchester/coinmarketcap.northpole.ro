@@ -1,39 +1,48 @@
-# coinmarketcap json api #
+# coinmarketcap json api
 
-need coinmarketcap data as json?
---------------------------------
+A web crawler to download all the currencies and assets found on [coinmarketcap.com](http://coinmarketcap.com/ "coinmarketcap.com") and save the results into a collection of JSON objects in a folder.
 
-Due to high server load, crawling has temporarily changed to every 10 minutes until a better option is found
+This projoect is forked from [mess110/coinmarketcap.northpole.ro](https://github.com/mess110/coinmarketcap.northpole.ro). All down crawled data is accessible on (coinmarketcap.northpole.ro)[http://coinmarketcap.northpole.ro].
 
-A straightforward JSON API for all the currencies and assets found on [coinmarketcap.com](http://coinmarketcap.com/ "coinmarketcap.com") crawled every 5 minutes
+I'm adding my own comments and modifications to the project which will suits my need. 
 
-version 8
----------
+## Getting Started
 
-[swagger documentation](https://app.swaggerhub.com/apis/mess110/CoinMarketCap-Json-Api/v8)
+@Mess110 has quite minimum instructions in his original repository. I will add my note to it so it can be followed step by step easily.
 
-[bitcoin and dogecoin ticker](//coinmarketcap.northpole.ro/ticker.json?identifier=bitcoin,dogecoin)
+### Minimum hardware requirements
+2 vCPU
+1GB RAM
+30GB disk space
 
-[historical data bitcoin 2016](//coinmarketcap.northpole.ro/history.json?coin=bitcoin&period=2016)
+I've used Azure to get a vitual machine running for this project. You should be able to size up and down the Azure VM as you like.
 
+### Setup
 
-community projects
-------------------
+Freshly from the new VM, there are a few more steps needed rather suggested by @Mess110.
 
-[python cli](https://github.com/abitfan/coinmarketcap-cli)
-[top 10 analysis](http://ekerstein.com/coin_2017_price/top10/)
-[XMR Android widget](https://play.google.com/store/apps/details?id=tr.monerostatus)
+1. [Install RVM](https://github.com/rvm/ubuntu_rvm)
+2. ```rvm install 2.1.0``` (Using RVM to install ruby 2.1.0)
+3. ```gem install bundler``` (Install Bundler)
+4. ```git clone https://github.com/JimmyWuMadchester/coinmarketcap.northpole.ro.git``` (Git clone this repo)
+5. ```cd coinmarketcap-api```
+6. ```bundle install```
 
-want to add your project to the list?
+### Running the crawler as an one-off
 
-<br />
+```ruby script.rb```
 
+You can check the log file under ```./logs/script.log```
+You can also find all the downloaded JSON objects under ```./public/api/```
+
+### Deploy with capistrano
+
+```cap production deploy``` # This will run the generate:doc rake task
+
+### Load the crontab
+
+Set up a task scheduler for running the crawler every 5 mins.
+```crontab crons/northpole-crontab```
+
+## Social Media
 [/r/coinmarketcapjson](https://www.reddit.com/r/coinmarketcapjson/)
-
-<a href="https://twitter.com/mess110" class="twitter-follow-button" data-show-count="true" data-show-screen-name="false">Follow @mess110</a>
-
-<br />
-
-Bitcoin Donations: 1LCzNB9SmpFcdUhCXadpLzHmWAnwnuAw9k
-
-Doge Donations: DN3qUPSKZ5vXgRU5zUvTRePo63V59Mc8id
