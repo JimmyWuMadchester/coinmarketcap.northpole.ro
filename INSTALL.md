@@ -5,19 +5,23 @@ Install
 
 2 vCPU
 
-1024GB RAM
+1GB RAM
 
 30GB disk space
 
 # Setup
 
-rvm install 2.1.0
+```rvm install 2.1.0```
 
-git clone git@github.com:mess110/coinmarketcap.northpole.ro.git coinmarketcap-api
+```gem install bundler```
 
-cd coinmarketcap-api
+```gem install rails```
 
-bundle install
+git clone this repo
+
+```cd coinmarketcap-api```
+
+```bundle install```
 
 ruby script.rb
 
