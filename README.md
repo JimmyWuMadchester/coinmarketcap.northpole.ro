@@ -10,10 +10,11 @@ I'm adding my own comments and modifications to the project which will suits my 
 
 @Mess110 has quite minimum instructions in his original repository. I will add my note to it so it can be followed step by step easily.
 
-### Minimum hardware requirements
-2 vCPU
-1GB RAM
-30GB disk space
+|**Minimum hardware requirements**|
+|-|
+|2 vCPU|
+|1GB RAM|
+|30GB disk space|
 
 I've used Azure to get a vitual machine running for this project. You should be able to size up and down the Azure VM as you like.
 
